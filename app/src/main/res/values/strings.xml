@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">Geee</string>
+
+    <string name="facebook_app_id">1055167965109254</string>
+    <string name="fb_login_protocol_scheme">1055167965109254</string>
+    <string name="gif_api_key">nEihFLIG2tocviuTu4WP0bMMSE31FtY0</string>
+
+    <string name="are_you_sure">Are you sure you want to delete?</string>
+    <string name="ivalid_input" translatable="false">Field cant be empty.</string>
+
+    <!--Signup String is here-->
+    <string name="user_name" translatable="false">User Name</string>
+
+    <string name="lbl_brightness">BRIGHTNESS</string>
+    <string name="lbl_contrast">CONTRAST</string>
+    <string name="lbl_saturation">SATURATION</string>
+    <string name="tab_filters">FILTERS</string>
+    <string name="tab_edit">EDIT</string>
+
+
+    <string name="roboto_medium">sans-serif-medium</string>
+    <string name="filter_normal">Normal</string>
+    <string name="action_share">Share</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="empty_home">Here you will see your followers posts.</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="location_heading_denied_sub">Go to setting and follow these steps</string>
+    <string name="location_heading_denied_step_1">1. Tap into <font color='#000000'> permission</font></string>
+    <string name="location_heading_denied_step_2">2. Tap into <font color='#000000'> Location </font></string>
+    <string name="location_heading_denied_step_2_gallery">2. Tap into <font color='#000000'> Storage </font></string>
+    <string name="location_heading_denied_step_3">3. Select Allow</string>
+    <string name="allow">Open Setting</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="version">2.2</string>
+    <string name="device">android</string>
+    <string name="delete_function_not_available_in_demo">Delete Function not available in demo</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="applovin_sdk_key">x5ImfykxaMWs-ntpF6fuNGlFBtC9zBJuGcewTMs8kN_h9sVOz9HLQ0abtnmqy4iDgM8Ek_MRML7WCdvAn53431</string>
+
+    <!-- OneSignal ID -->
+    <string name="oneSignal_id" translatable="false"></string>
+    <string name="channel_name">1</string>
+    <string name="channel_description">desc</string>
+    <string name="default_notification_channel_id">1</string>
+
+    <!-- Provider -->
+    <string name="file_provider">camcrows.photo.edit.provider</string>
+
+    <!-- Email / Privacy Link / Account Developer ID -->
+    <string name="email_feedback">email@gmail.com</string>
+    <string name="policy_url">https://www.google.com/</string>
+    <string name="developer_account_id">https://www.google.com/</string>
+
+    <string name="directory" translatable="false">/.PhotoEditorTemp/</string>
+    <string name="share_txt">Hey view/Share this image</string>
+    <string name="share_image_via">Share File via...</string>
+    <string name="rating_promote">We are working hard for a better user experience. \nWe\'d greatly appreciate if you can rate us.</string>
+    <string name="rating_title_1">Oh, no!</string>
+    <string name="rating_title_2">We like you too!</string>
+    <string name="rating_text_1">Please leave us some feedback.</string>
+    <string name="rating_text_4">Thanks for your feedback.</string>
+    <string name="rating_text_5">The best we can get :)</string>
+    <string name="feedback">Feed back</string>
+    <string name="tap_to_select">Tap to select</string>
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="settings">Settings</string>
+    <string name="press_back">Please press back again to exit</string>
+    <string name="share_friend">Share app</string>
+    <string name="sharpen">Sharpen</string>
+    <string name="saturation">Saturation</string>
+    <string name="choose_email">Choose an app</string>
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="rating_dialog_maybe_later">Maybe later</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="dialog_discard_title">Changes will not be saved. Do you want to proceed?</string>
+    <string name="discard">Discard</string>
+    <string name="save">SAVE</string>
+    <string name="edit">Professional Editor</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera_not_available_message">camera not available message</string>
+    <string name="camera_create_file_failed">camera create file failed</string>
+    <string name="hue">hue</string>
+    <string name="exposure">exposure</string>
+    <string name="file_deleted">File Deleted</string>
+    <string name="please_try_again">Please try again</string>
+    <string name="later">Later</string>
+    <string name="thank_you_2">Have a nice day</string>
+    <string name="thank">THANK</string>
+    <string name="you">YOU</string>
+    <string name="email_app_not_installed">Email app not installed</string>
+    <string name="creation">Creation</string>
+    <string name="share_text">I\'m using amazing Camcrows All in one photo editing app! Get the free app at</string>
+    <string name="update">Update</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="photo_update">Camcrows recommends that you update to the latest version. You can keep using this app while downloading the update.</string>
+
+    <string name="wing">Wing</string>
+    <string name="neon">Neon</string>
+    <string name="count">Count</string>
+    <string name="opacity">Opacity</string>
+    <string name="rotate">Rotate</string>
+    <string name="motion">Motion</string>
+    <string name="style">Style</string>
+    <string name="background">Background</string>
+    <string name="bg_change">BG</string>
+    <string name="drip">Drip</string>
+    <string name="txt_not_detect_human">Human detection is failed. Please try again.</string>
+    <string name="size">Size</string>
+    <string name="offset">Offset</string>
+    <string name="threshold">Threshold</string>
+    <string name="redoing">Redoing</string>
+    <string name="undoing">Undoing</string>
+    <string name="import_img_warning">Please import image!!!</string>
+    <string name="importing_image">Importing image…</string>
+    <string name="import_error">Error while getting image.</string>
+    <string name="extract">Extract</string>
+    <string name="bg">Bg</string>
+    <string name="restore">Restore</string>
+    <string name="zoom">Zoom</string>
+    <string name="auto">Auto</string>
+    <string name="cut_inside">cut inside</string>
+    <string name="cut_outside">cut outside</string>
+    <string name="filter">Filter</string>
+    <string name="adjust">Adjust</string>
+    <string name="overlay">Overlay</string>
+    <string name="crop">Crop</string>
+    <string name="profile">Profile</string>
+    <string name="splash">Splash</string>
+    <string name="hsl">HSL</string>
+    <string name="sticker">Sticker</string>
+    <string name="text">Text</string>
+    <string name="blur">Blur</string>
+    <string name="mirror">Mirror</string>
+    <string name="paint">Paint</string>
+    <string name="ratio">Ratio</string>
+    <string name="square">Square</string>
+    <string name="beauty">Beauty</string>
+    <string name="body">Body</string>
+    <string name="eye">Eye</string>
+    <string name="cheek">Cheek</string>
+    <string name="whiten">Whiten</string>
+    <string name="face">Face</string>
+    <string name="lip">Lip</string>
+    <string name="enlarge">Enlarge</string>
+    <string name="dark">Dark</string>
+    <string name="brighten">Brighten</string>
+    <string name="color">Color</string>
+    <string name="eraser">Eraser</string>
+    <string name="share">Share us</string>
+    <string name="apps">Apps</string>
+    <string name="policy">Policy</string>
+    <string name="rate_us">Rate us</string>
+    <string name="share_with_friends">Share With Friends</string>
+    <string name="more_apps_from_us">More Apps from us</string>
+    <string name="download_this">Download this awesome app</string>
+    <string name="padding">Padding</string>
+    <string name="autoenhance">Auto Enhance</string>
+    <string name="facetuner">Face-Tuner</string>
+
+    <string name="error">Something went wrong. Please try again.</string>
+    <string name="error_no_camera">No camera found</string>
+    <string name="photo_saved">Image saved successfully</string>
+    <string name="give_feedback_to_improve">Give feedback to improve Facetune!</string>
+    <string name="give_us_a_5_star_rating">Give us a 5-star rating</string>
+
+    <string name="here_are_your_5_stars">Here are your 5 stars!</string>
+    <string name="no_images_found">Images Not found</string>
+
+    <string name="acne">Acne</string>
+    <string name="details">Details</string>
+    <string name="refine">Refine</string>
+    <string name="smooth">Smooth</string>
+    <string name="erase">Erase</string>
+    <string name="all_images">All Images</string>
+    <string name="tap_on_acne_or_masks_to_remove">Tap on acne or masks to remove</string>
+    <string name="rateUs">Rate Us</string>
+
+
+    <string name="rationale_title">Permission required</string>
+    <string name="signin"><b><u>Version-1.0.004</u></b></string>
+</resources>

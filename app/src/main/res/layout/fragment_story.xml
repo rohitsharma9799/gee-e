@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/story_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/image_placeholder"
+        app:placeholderImage="@color/black"
+        />
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/playerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:use_controller="false"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <jp.shts.android.storiesprogressview.StoriesProgressView
+            android:id="@+id/stories"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/prof_photo_id"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile_gray"
+                    android:visibility="visible"
+                    app:civ_border_color="@color/accent"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/prof_photo_id"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/username_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotbold"
+                        android:text="Username"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_layout"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <View
+                    android:id="@+id/reverse"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:id="@+id/skip"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:background="@drawable/round_border_msg">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/comment_prof_photo_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image_placeholder"
+            app:civ_border_color="@color/accent"
+            app:civ_border_width="1dp" />
+
+        <EditText
+            android:id="@+id/edittext_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/ic_search"
+            android:layout_toRightOf="@+id/comment_prof_photo_id"
+            android:background="@color/transparent"
+            android:hint="Add a comment..."
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/ic_search"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Send"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stories_recyclerview"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

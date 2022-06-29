@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Inner_VP_Package.Bottompanel"
+    android:background="@drawable/cardbackgroundnew">
+<!--    <View-->
+<!--        android:id="@+id/image_23"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/image_23"-->
+<!--        />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="@dimen/padding_10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        <ImageView
+            android:id="@+id/feedorignal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@drawable/rss" />
+            <ImageView
+                android:id="@+id/feed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/rssblack" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:src="@drawable/starrr" />
+            <ImageView
+                android:id="@+id/starorignal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/starorignal" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tag"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/tagg" />
+
+            <ImageView
+                android:id="@+id/tagorignal"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/tagorignal" />
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

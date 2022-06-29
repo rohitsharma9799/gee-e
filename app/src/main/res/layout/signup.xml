@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/signup_parent_RL_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:src="@drawable/friendshipoali" />
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_above="@id/FrameLayout_fb_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/geeelogotransparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@+id/FrameLayout_fb_login"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout_fb_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp">
+
+        <RelativeLayout
+            android:id="@+id/signup_fb"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/buttonbackgroundnew"
+                android:padding="5dp">
+
+                <ImageView
+
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_toLeftOf="@id/signup_IV_id"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_facebook_white" />
+
+                <TextView
+                    android:id="@+id/signup_IV_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Continue with Facebook"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/FrameLayout_fb_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="20dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:layout_toLeftOf="@+id/signup_OR_id"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/signup_OR_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="OR"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:layout_toRightOf="@+id/signup_OR_id"
+                android:background="@color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/signup_RKL_id_o"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/buttonbackgroundnew"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_toLeftOf="@+id/signup_IV_id_1"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_email_white" />
+
+                <TextView
+                    android:id="@+id/signup_IV_id_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="Continue with Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_rlt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/up_border_line">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" SIGN IN"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/textcolor"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:padding="15dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backarrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/padding_10"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/backkk" />
+
+        <TextView
+            android:id="@+id/headu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/backarrow"
+            android:fontFamily="@font/robotbold"
+            android:layout_gravity="start"
+
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:text="Create an account"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headu"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backarrow"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:lineHeight="24dp"
+                android:text="Enter your email address or mobile no. to create an account"
+                android:textColor="@color/black"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                style="@style/MyEdittext1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/login_IV_id"
+                    android:layout_width="23dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/emailui"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/et_emailUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:hint="Email"
+                    android:inputType="textNoSuggestions"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="6dp">
+
+                <Button
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonbackgroundnew"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="CONTINUE"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:id="@+id/signUp_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account?"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/sign_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SIGN IN"
+                        android:fontFamily="@font/robotbold"
+                        android:textColor="@color/textcolor"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

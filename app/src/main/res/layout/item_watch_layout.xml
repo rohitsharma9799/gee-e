@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:background="@color/black"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        app:cardBackgroundColor="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainlayout">
+
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/playerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/black"
+                android:padding="0dp"
+                app:controller_layout_id="@layout/item_player_controler"
+                app:resize_mode="zoom"
+                app:show_timeout="1000"
+                app:shutter_background_color="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0D000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/robotbold"
+                    android:text="Rohit"
+                    android:textColor="@color/black"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"/>
+                <TextView
+                    android:id="@+id/desc_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:fontFamily="@font/robotoregular"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="3"
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="@dimen/padding_10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/sound_image"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/geeelogotransparent" />
+
+                    <TextView
+                        android:id="@+id/sound_name"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="3"
+                        android:fontFamily="@font/robotoregular"
+                        android:singleLine="true"
+                        android:text="Indian sound or Song Name"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/varified_btn"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_verified"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/like_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/like_image"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:clipToOutline="true"
+                            android:elevation="12dp"
+                            android:outlineProvider="background"
+                            android:outlineSpotShadowColor="@color/red"
+                            android:scaleType="fitCenter"
+                            android:shadowColor="#777777"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:src="@drawable/heartwhitds" />
+
+                        <TextView
+                            android:id="@+id/like_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sdi"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/hertjf"
+                            android:gravity="center"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="3"
+                            android:text="likes"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/comment_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/comment_image"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/chatmeds"
+                            app:tint="@color/black" />
+
+                        <TextView
+                            android:id="@+id/comment_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="3"
+                            android:text="comment"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/shared_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/sharegap"
+                            app:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:shadowColor="@color/gray"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="3"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/sdi"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="35dp"
+                android:elevation="15dp"
+                android:gravity="center">
+
+                <!-- <com.facebook.drawee.view.SimpleDraweeView
+                     android:id="@+id/imageview_id"
+                     android:layout_width="70dp"
+                     android:layout_height="70dp"
+                     android:layout_centerInParent="true"
+                     android:background="@drawable/circle_border_bkg"
+                     app:placeholderImageScaleType="centerCrop"
+                     app:roundingBorderColor="@color/com_facebook_blue"
+                     app:roundingBorderWidth="2dp"
+                     fresco:roundedCornerRadius="15dp" />-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_pic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_image_placeholder"
+                    app:civ_border_color="@color/accent"
+                    app:civ_border_width="1dp" />
+
+                <ImageView
+                    android:id="@+id/follow_this_user"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:src="@drawable/addme" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/sound_image_layout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:visibility="gone"
+                android:background="@drawable/musicbground"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_pp">
+
+
+                <RelativeLayout
+                    android:id="@+id/expandone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/golive_border"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_add_black_24dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:src="@drawable/geeelogotransparent" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

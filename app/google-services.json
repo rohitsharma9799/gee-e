@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "390403277864",
+    "firebase_url": "https://geee-1ba1a-default-rtdb.firebaseio.com",
+    "project_id": "geee-1ba1a",
+    "storage_bucket": "geee-1ba1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390403277864:android:6e8d4d10638d494ce3a11d",
+        "android_client_info": {
+          "package_name": "com.geee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390403277864-1rkk731tecig6pun9a01c0mihokr3qjo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geee",
+            "certificate_hash": "767811928faf381c9b43bdfe737eb79841eb5bd1"
+          }
+        },
+        {
+          "client_id": "390403277864-fc1sqno7ugbso571ksbvjh634j39rcra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ_qVK0C7kTSk4c6ziCLQXMdfwB492o2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390403277864-fc1sqno7ugbso571ksbvjh634j39rcra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

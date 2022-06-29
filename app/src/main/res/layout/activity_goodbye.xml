@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/BackgroundCardColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/tv_thankyou_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="40sp"
+            android:textColor="@color/mainColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thank"
+            android:textStyle="bold"
+            android:fontFamily="@font/san_bold"/>
+
+        <TextView
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/you"
+            android:fontFamily="@font/font"/>
+
+    </LinearLayout>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:id="@+id/tv_thankyou_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/thank_you_2"
+        android:fontFamily="@font/font"/>
+
+</LinearLayout>

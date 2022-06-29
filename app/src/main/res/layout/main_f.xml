@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/mainsnacklayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.geee.Inner_VP_Package.CustomViewpager
+            android:id="@+id/viewpager_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/bottombarid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout_id"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/roundborderoffwhite"
+                app:tabGravity="fill"
+                app:tabIconTint="@color/white"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="fixed"
+                app:tabRippleColor="@color/transparent" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="45dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:padding="5dp"-->
+<!--                android:src="@drawable/plussss" />-->
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</RelativeLayout>

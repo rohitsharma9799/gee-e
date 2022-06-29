@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="-15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:visibility="gone"
+                fresco:placeholderImage="@drawable/ic_profile_gray"
+                fresco:roundAsCircle="true" />
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/prof_photo_id"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_gray"
+                android:visibility="visible"
+                app:placeholderImage="@drawable/ic_profile_gray"
+                app:roundAsCircle="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/prof_photo_id">
+
+                <TextView
+                    android:id="@+id/username_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/username_id"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/menu_id"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:padding="16dp"
+                android:src="@drawable/ic_menu" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/corl_id"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/toolbar_id">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/item_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:placeholderImage="@drawable/image_placeholder"
+            app:placeholderImageScaleType="centerCrop" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/corl_id">
+
+        <com.like.LikeButton
+            android:id="@+id/like_id"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            app:anim_scale_factor="-0.5"
+            app:circle_end_color="@color/white"
+            app:circle_start_color="@color/white"
+            app:dots_primary_color="@android:color/transparent"
+            app:dots_secondary_color="@android:color/transparent"
+            app:icon_size="20dp"
+            app:icon_type="heart"
+            app:like_drawable="@drawable/ic_heart_fill"
+            app:liked="false"
+            app:unlike_drawable="@drawable/ic_heart" />
+
+        <ImageView
+            android:id="@+id/comment_id"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/like_id"
+            android:padding="5dp"
+            android:src="@drawable/ic_bubble" />
+
+        <ImageView
+            android:id="@+id/share_id"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/comment_id"
+            android:padding="5dp"
+            android:src="@drawable/ic_instagram_share"
+            android:visibility="visible" />
+
+        <com.like.LikeButton
+            android:id="@+id/saved_id"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            app:anim_scale_factor="-0.5"
+            app:circle_end_color="@color/white"
+            app:circle_start_color="@color/white"
+            app:dots_primary_color="@android:color/transparent"
+            app:dots_secondary_color="@android:color/transparent"
+            app:icon_size="20dp"
+            app:like_drawable="@drawable/ic_bookmar_fill"
+            app:unlike_drawable="@drawable/ic_bookmark" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/likes_count_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_container"
+        android:layout_marginLeft="12dp"
+        android:text="1000 likes"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/username_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/likes_count_id"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/post_desc_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/likes_count_id"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/username_comment"
+        android:text="Username"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvViewComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/post_desc_id"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:text="View all comments" />
+
+    <TextView
+        android:id="@+id/latest_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvViewComment"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/latest_comment"
+        android:layout_marginLeft="3dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/comment_prof_photo_id"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            app:placeholderImage="@drawable/ic_profile_gray"
+            app:roundAsCircle="true" />
+
+        <EditText
+            android:id="@+id/edittext_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/post_id"
+            android:layout_toRightOf="@+id/comment_prof_photo_id"
+            android:background="@color/transparent"
+            android:hint="Add a comment..."
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/post_id"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="2dp"
+            android:gravity="center"
+            android:text="Post"
+            android:textColor="@color/facebook_transprncy"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/time_ago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15 days a go"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_transparent">#515151</color>
+
+    <color name="colorAccent">#fff</color>
+    <color name="colorPrimary">#4C2EBF</color>
+    <color name="colorPrimaryDark">#4C2EBF</color>
+    <color name="dark">#000</color>
+    <color name="grayText">#969696</color>
+
+    <color name="imageBG">#313131</color>
+    <color name="loadingBG">#a0000000</color>
+
+    <color name="menuRed">#4C2EBF</color>
+    <color name="progressBG">#66ffffff</color>
+</resources>

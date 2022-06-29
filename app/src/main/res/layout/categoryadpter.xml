@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgcategory"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_image_placeholder"
+                app:civ_border_color="@color/accent"
+                app:civ_border_width="1dp" />
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#54000000" />-->
+            <TextView
+                android:id="@+id/catname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgcategory"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Spices"
+                android:fontFamily="@font/robotoregular"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgcategory"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:id="@+id/followed"
+                android:padding="5dp"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/accent"
+                android:layout_gravity="center"
+                android:text="Follow"
+                android:textSize="10dp"
+             />
+
+        </LinearLayout>
+</RelativeLayout>

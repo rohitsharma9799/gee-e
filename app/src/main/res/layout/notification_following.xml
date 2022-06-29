@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/no_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/empty_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_id"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="64dp"
+            android:paddingRight="64dp"
+            android:paddingBottom="64dp"
+            android:visibility="gone"
+            >
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="No new Notificaiton found"
+                android:textColor="@color/gray" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

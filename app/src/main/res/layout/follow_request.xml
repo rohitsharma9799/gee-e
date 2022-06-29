@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="-15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="14dp"
+                android:src="@drawable/backkk"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ic_back"
+                android:text="Follow Requests"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/follwers_request"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_id"
+        android:layout_margin="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/no_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_id"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv2_id"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_follow_request" />
+
+            <TextView
+                android:id="@+id/tv3_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv2_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Follow Requests"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="15dp"
+                android:text="When people ask to follow you, you'll see their requests here."
+                android:textAlignment="center"
+                android:textColor="@color/gray" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <size android:height="@dimen/acne_preview" android:width="@dimen/acne_preview"/>
+            <stroke android:width="1dp" android:color="#fff"/>
+            <corners android:radius="8dp"/>
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/acne_preview_circle_padding" android:top="@dimen/acne_preview_circle_padding" android:right="@dimen/acne_preview_circle_padding" android:bottom="@dimen/acne_preview_circle_padding">
+        <shape>
+            <stroke android:width="1.5dp" android:color="#fff"/>
+            <corners android:radius="180dp"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/acne_preview_plus_padding" android:top="@dimen/acne_preview_plus_padding" android:right="@dimen/acne_preview_plus_padding" android:bottom="@dimen/acne_preview_plus_padding">
+        <shape android:shape="line">
+            <stroke android:width="1.5dp" android:color="@color/menuRed"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/acne_preview_plus_padding" android:top="@dimen/acne_preview_plus_padding" android:right="@dimen/acne_preview_plus_padding" android:bottom="@dimen/acne_preview_plus_padding">
+        <rotate android:fromDegrees="90" android:toDegrees="90">
+            <shape android:shape="line">
+                <stroke android:width="1.5dp" android:color="@color/menuRed"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

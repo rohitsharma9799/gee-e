@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/time_ago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="This Week"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/time_ago"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:id="@+id/no_data_layout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userimage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                fresco:civ_border_color="@color/accent"
+                fresco:civ_border_width="1dp"
+                android:src="@drawable/profile_image_placeholder"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/postImage"
+            android:layout_toRightOf="@+id/no_data_layout">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="usama"
+                android:textColor="@color/white"
+                android:fontFamily="@font/robotbold"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/time_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_username"
+                android:layout_centerVertical="true"
+                android:text="time"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="#c5c5c5"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/postImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            fresco:placeholderImage="@drawable/image_placeholder"
+            fresco:roundedCornerRadius="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

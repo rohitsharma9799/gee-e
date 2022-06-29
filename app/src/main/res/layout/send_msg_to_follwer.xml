@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/rl_id">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image_placeholder"
+            app:civ_border_color="@color/accent"
+            app:civ_border_width="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/profileImage">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotbold"
+                    android:text="usama"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_fullname"
+                    android:text="User"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_toLeftOf="@+id/btn_id"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="28dp"
+                android:id="@+id/btn_send"
+                android:layout_toLeftOf="@+id/menu_id"
+                android:background="@drawable/follow_bg"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="32dp"
+                android:id="@+id/btn_after_send"
+                android:layout_toLeftOf="@+id/menu_id"
+                android:background="@drawable/border_line_transparent"
+                android:text="Sent"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/menu_id"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_menu"
+                android:padding="10dp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

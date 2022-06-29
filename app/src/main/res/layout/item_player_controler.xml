@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton android:id="@id/exo_play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        style="@style/playstbnt"
+        android:layout_gravity="center"
+        />
+
+    <ImageButton android:id="@id/exo_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        style="@style/pausebtn"
+        android:layout_gravity="center" />
+
+</FrameLayout>

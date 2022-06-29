@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:background="@drawable/d_round_corner_white_bkg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Delete this post..?" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Are you sure you want to delete this post."
+            android:includeFontPadding="false"
+            android:textSize="12dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/ok_btn"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/follow_bg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Delete"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/border_line_transparent"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Cancel"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

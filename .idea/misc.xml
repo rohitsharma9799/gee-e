@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/background_bottom.xml" value="0.154" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/background_item.xml" value="0.1545" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/background_unslelected.xml" value="0.1545" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/border_line_transparent.xml" value="0.154" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/buttonbackground.xml" value="0.154" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/buttonbackgroundnew.xml" value="0.154" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/d_round_corner_white_bkg.xml" value="0.154" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/edittext_background1.xml" value="0.154" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/edittext_background3.xml" value="0.154" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/ic_back.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/drawable/squarewhiteme.xml" value="0.137" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_background_change.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_beauty.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_blur.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_creation.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_drip.xml" value="0.2428174235403151" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_eraser.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_eyes.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_goodbye.xml" value="0.20416666666666666" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_lips.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_neon.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_photo_editor.xml" value="0.10914855072463768" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_post_upload.xml" value="0.22" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_preview.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_privacy_policy.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_profile.xml" value="0.11911231884057971" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_settings.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_share.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_splash.xml" value="0.12001811594202899" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_video_recoder.xml" value="0.25" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_video_recoder_duet.xml" value="0.11911231884057971" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_video_sound.xml" value="0.20416666666666666" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_whiten.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/activity_wing.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/dialog_rate.xml" value="0.10914855072463768" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/fragment_body.xml" value="0.20416666666666666" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/fragment_cropper.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/fragment_downloaded.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/fragment_hsl.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/fragment_mirrors.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/fragment_ratio.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/fragment_square.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/fragment_story.xml" value="0.11911231884057971" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/fragment_text.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/gallery_f.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/home.xml" value="0.10326086956521739" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_color.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_color_beauty.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_color_drip.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_color_radtio.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_color_text.xml" value="0.20416666666666666" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_drip.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_filter.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_filter_layout.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_myvideo_layoutsds.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_profile.xml" value="0.1" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_sound_layout.xml" value="0.11911231884057971" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_watch_layout.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/item_yesno_dialouge.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/layout_adjustment.xml" value="0.11911231884057971" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/login.xml" value="0.11865942028985507" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/main_activity.xml" value="0.11911231884057971" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/my_dialogd.xml" value="0.20416666666666666" />
+        <entry key="..\:/geel/Geee/app/src/main/res/layout/profile.xml" value="0.11911231884057971" />
+        <entry key="..\:/geel/Geee/app/src/main/res/menu/omfm_content_options.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

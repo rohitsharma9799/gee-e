@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/postlikeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="geee.com.Inner_VP_Package.Home_Package.Show_Post_Likes.PostLikesA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="-15dp"
+            android:background="@color/black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back_id"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_back_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/back_id"
+                    android:text="Likes"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_id"
+            android:background="@color/black">
+
+            <EditText
+                android:id="@+id/search_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_border_edittext"
+                android:backgroundTint="#EEE"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="5dp"
+                android:hint="Search"
+                android:padding="10dp"
+                android:visibility="visible" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ver_RV_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/search_friends"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bottom_border_line"
+                android:overScrollMode="never" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

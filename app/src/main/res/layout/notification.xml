@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10"
+    android:background="@color/black">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:id="@+id/prof_tb_rl_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tv_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:fontFamily="@font/robotbold"
+                    android:text="Notifications"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/masrkallread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/padding_10"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:fontFamily="@font/robotbold"
+                    android:text="Mark all as read"
+                    android:textAlignment="center"
+                    android:textColor="@color/textcolor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/white"
+        app:tabMode="fixed" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/noti_viewpager_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablayout_id" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/toolbar_id"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/logo"
+            android:fontFamily="@font/robotoregular"
+            android:padding="@dimen/padding_10"
+            android:text="TODAY"
+            android:textColor="@color/lightexcolor"
+            android:textSize="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_id"
+            android:padding="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/primarydark"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profile2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:src="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile2"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Steve mccurry"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/des2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile2"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="10m ago"
+                    android:textColor="@color/graytextcolor"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_id"
+            android:padding="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/primarydark"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profile3"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"                    android:src="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile3"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Steve mccurry followed you."
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/des3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile3"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="10m ago"
+                    android:textColor="@color/graytextcolor"
+                    android:textSize="12dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/padding_10"
+                    app:cardCornerRadius="6dp">
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:background="@drawable/buttonbackgroundnew"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="Follow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/logo"
+            android:fontFamily="@font/robotoregular"
+            android:padding="@dimen/padding_10"
+            android:text="YESTERDAY"
+            android:layout_marginTop="@dimen/padding_10"
+            android:textColor="@color/lightexcolor"
+            android:textSize="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_id"
+            android:padding="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/primarydark"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profile4"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:src="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile4"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Steve mccurry commented on your post"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/des4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile4"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="10m ago"
+                    android:textColor="@color/graytextcolor"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_id"
+            android:padding="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/primarydark"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/padding_10"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/profile5"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:src="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile5"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Steve mccurry followed you."
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/des5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/profile5"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="10m ago"
+                    android:textColor="@color/graytextcolor"
+                    android:textSize="12dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/padding_10"
+                    app:cardCornerRadius="6dp">
+
+                    <Button
+                        android:id="@+id/btnfollor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:background="@drawable/buttonbackgroundnew"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="Follow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

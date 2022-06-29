@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Chat_F"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="false"
+    tools:context="geee.com.Chat.Chat_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_weight="1"
+        android:background="@color/black"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/Goback"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+
+                android:background="@android:color/transparent"
+                android:padding="15dp"
+                android:scaleType="fitStart"
+                android:tint="@color/white"
+                android:src="@drawable/backkk" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/Goback"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/accent"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profileimage"
+                android:text="Chat"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/typeindicator" />
+
+
+        <LinearLayout
+            android:id="@+id/typeindicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/writechatlayout"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_type_indicator"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/gif_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_above="@+id/writechatlayout"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/hide_gif_layout"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@color/transparent"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_down_arrow" />
+
+            <com.chauthai.overscroll.RecyclerViewBouncy
+                android:id="@+id/gif_recylerview"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/writechatlayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/uploadimagebtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_attachment" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_toRightOf="@+id/uploadimagebtn"
+                android:background="@drawable/round_border_msg">
+
+
+                <EditText
+                    android:id="@+id/msgedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/transparent"
+                    android:hint="Message ..."
+                    android:imeOptions="actionSend"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:padding="12dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14dp" />
+
+
+
+
+                <TextView
+                    android:id="@+id/sendbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:scaleType="fitXY"
+                    android:text="Send"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageButton
+            android:id="@+id/upload_stiker_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/upload_gif_btn"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_smilly"
+            android:tint="@color/white" />
+
+
+        <ImageButton
+            android:id="@+id/upload_gif_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:tint="@color/white"
+            android:src="@drawable/ic_gif" />
+    </LinearLayout>
+</RelativeLayout>

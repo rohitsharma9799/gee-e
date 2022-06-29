@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.geee" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-feature
+        android:name="android.hardware.camera2.full"
+        android:required="false" />
+
+    <application
+        android:name=".Utils.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/geeetrans"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/geeetrans_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".Inner_VP_Package.Profile_Pacakge.Story_Package.StroryF"
+            android:exported="true" />
+        <activity
+            android:name=".Demotest"
+            android:exported="true" /> <!-- <uses-library android:name="org.apache.http.legacy" android:required="false" /> -->
+        <activity
+            android:name=".Login_Package.Fogetpassword"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.AboutUs"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.PrivacyPolicy"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.HelpDesk"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.Contactus"
+            android:exported="true" />
+        <activity
+            android:name=".Menu.TermsCondition"
+            android:exported="true" />
+        <activity
+            android:name=".Inner_VP_Package.Profile_Pacakge.Changepassword"
+            android:exported="true" />
+        <activity
+            android:name=".Location.LocationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        -->
+        <activity
+            android:name=".Inner_VP_Package.Profile_Pacakge.SavedPackage.SavedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Inner_VP_Package.Home_Package.Show_Post_Likes.PostLikesA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View_Tag.View_Tag_Detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Inner_VP_Package.Profile_Pacakge.Story_Package.ViewStory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Inner_VP_Package.View_User_profile.View_user_Profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Inner_VP_Package.Search_Pacakge.Search.Search_thing_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tictokcode.SoundLists.VideoSound_A"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Utils.FiltersA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main_VP_Package.Main"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Fb activities -->
+        <service
+            android:name=".Push_Notification.MyFirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- <service android:name=".Push_Notification.FirebaseIDService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity> <!-- End FB activities meta data -->
+        <activity
+            android:name=".Signup_Package.Signup_Email"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Signup_Package.Username_Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main_VP_Package.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Inner_VP_Package.Profile_Pacakge.Edit_Profile_Package.EditProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Inner_VP_Package.Home_Package.Comment_Chat"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".Chat.Videos.Chat_Send_file_Service"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="startservice" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9c8c2ca1bed2446900c2669a80e1185c93ee91a4" />
+
+        <activity
+            android:name="cat.ereza.customactivityoncrash.activity.DefaultErrorActivity"
+            android:process=":error_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/error_activity_theme" /> <!-- Ticktok -->
+        <activity
+            android:name=".tictokcode.WatchVideos.WatchVideos_F"
+            android:exported="true"
+            android:parentActivityName=".tictokcode.Main_Menu.MainMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/black_status"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            tools:ignore="LockedOrientationActivity" >
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="bringthings.com"
+                    android:scheme="http" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".tictokcode.Main_Menu.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name=".tictokcode.Video_Recording.Trim_video_A"
+            android:theme="@style/black_status" />
+        <activity
+            android:name=".tictokcode.Video_Recording.Video_Recoder_Duet_A"
+            android:theme="@style/black_status" />
+        <activity
+            android:name=".tictokcode.Video_Recording.DraftVideos.DraftVideos_A"
+            android:screenOrientation="portrait"
+            android:theme="@style/white_status"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".tictokcode.Video_Recording.GallerySelectedVideo.GallerySelectedVideo_A"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".tictokcode.Splash_A"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".tictokcode.Main_Menu.MainMenuActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparent_status"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" /> <!-- android:parentActivityName="com.muddu.musictok.Main_Menu.MainMenuActivity" -->
+        <activity
+            android:name=".tictokcode.Video_Recording.Video_Recoder_A"
+            android:screenOrientation="portrait"
+            android:theme="@style/black_status"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".tictokcode.Video_Recording.Preview_Video_A"
+            android:screenOrientation="portrait"
+            android:theme="@style/black_status"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Inner_VP_Package.Add_picture_Package.PostUpload"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".tictokcode.Video_Recording.Post_Video_A"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".tictokcode.SoundLists.SoundList_Main_A"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <!--
+ <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/redcolor" />
+
+        <service
+            android:name=".tictokcode.Services.Upload_Service"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="startservice" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+
+        <!--Photoeditor-->
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="@string/applovin_sdk_key" />
+
+
+        <activity
+            android:name=".Photoeditor.activities.BgChangeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Photoeditor.activities.ThankYouActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar2"/>
+        <activity
+            android:name=".Photoeditor.activities.PhotoEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Photoeditor.activities.BlurActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Photoeditor.activities.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+
+        <activity
+            android:name=".Photoeditor.activities.CreationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Photoeditor.activities.PreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Photoeditor.activities.BeautyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photoeditor.activities.WhitenEditorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photoeditor.activities.LipEditorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photoeditor.activities.EyeEditorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Photoeditor.activities.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Photoeditor.activities.PolicyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Photoeditor.activities.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Photoeditor.activities.DripActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photoeditor.activities.NeonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photoeditor.activities.WingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photoeditor.activities.EraseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

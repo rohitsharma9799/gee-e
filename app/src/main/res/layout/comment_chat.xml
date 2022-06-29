@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Inner_VP_Package.Home_Package.Comment_Chat">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_id"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="-15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ic_back"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerVertical="true"
+                        android:padding="15dp"
+                        android:src="@drawable/backkk"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ic_back"
+                        android:text="Comments"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/postImage"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentRight="true"
+                        android:padding="3dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/chatim"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/add_comment_RL"
+                android:layout_below="@+id/toolbar_id">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/comment_RV_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/add_comment_RL"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_border_msg">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/comment_prof_photo_id"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_image_placeholder"
+                    app:civ_border_color="@color/accent"
+                    app:civ_border_width="1dp" />
+
+                <EditText
+                    android:id="@+id/edittext_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toLeftOf="@+id/post_id"
+                    android:layout_toRightOf="@+id/comment_prof_photo_id"
+                    android:background="@color/transparent"
+                    android:hint="Add a comment..."
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/post_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Send"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

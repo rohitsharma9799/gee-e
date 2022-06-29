@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.muddu.musictok.Profile.UserVideos.UserVideo_F">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/recylerview"
+      android:scrollingCache="true"/>
+
+
+    <LinearLayout
+          android:id="@+id/no_data_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_alignParentTop="true"
+          android:visibility="gone"
+          android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/img_no_job"
+            android:layout_centerHorizontal="true"
+            android:text="Ooops! no post yet"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            android:id="@+id/whoops"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/whoops"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_gray"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:text="Tap to create icon for upload new post"
+            android:textSize="12sp"/>
+
+      </LinearLayout>
+  </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    fresco:cardCornerRadius="15dp"
+    android:layout_margin="2dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/thumb_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:scaleType="centerCrop"
+        fresco:placeholderImage="@drawable/geelogoblue" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/d_gray_border"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_profile_red"
+            fresco:tint="@color/black" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_txt"
+        android:layout_marginLeft="5dp"
+        android:shadowColor="@color/darkgray"
+        android:shadowDx="2"
+          android:text="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_10"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:id="@+id/prof_tb_rl_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rl_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/tv_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:fontFamily="@font/robotbold"
+                    android:text="Top Trends"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/postImage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_drawer_menu"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_id">
+
+        <!-- <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/latest_trend_RV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_border_line"
+            android:visibility="visible" />-->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        <com.mlsdev.animatedrv.AnimatedRecyclerView
+            android:id="@+id/latest_trend_RV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:animationDuration="800"
+            android:layout_marginBottom="60dp"
+            app:layoutAnimation="@anim/layout_animation_from_bottom_scale"
+            app:layoutManagerOrientation="vertical"
+            app:layoutManagerReverse="false"
+            app:layoutManagerType="linear" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Popular #Tag"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Accounts_RV_id"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+
+
+
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_comment_RL"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/edittext_backgroundnew">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/comment_prof_photo_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="6dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:placeholderImage="@drawable/profile_image_placeholder"
+            app:placeholderImageScaleType="fitCenter"
+            app:roundAsCircle="false"
+            app:roundedCornerRadius="18dp"
+            app:roundingBorderColor="#DDDDDD"
+            app:roundingBorderWidth="3dp" />
+
+
+        <ImageView
+            android:id="@+id/ic_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/searchh"
+            app:tint="@color/fadetextcolor" />
+
+        <EditText
+            android:id="@+id/edittext_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ic_search"
+            android:background="@color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/robotoregular"
+            android:hint="Search account here..."
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

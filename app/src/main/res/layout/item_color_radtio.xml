@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/filterRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp">
+
+
+
+
+        <View
+            android:id="@+id/square_view"
+            android:background="@color/mainColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/image_view_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageSelection"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_round_check_circle"
+        android:background="@drawable/background_unslelected"
+        android:backgroundTint="#34000000"
+        android:elevation="1dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
